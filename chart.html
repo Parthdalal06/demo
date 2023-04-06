@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <style>
+        .color-blue {
+            color: #0034ff;
+        }
+
+        tr td {
+            font-size: 1vw;
+        }
+
+        .page-link {
+            color: #0034ff !important;
+            background: transparent;
+            border: none;
+            font-weight: 700;
+        }
+
+        .icon-bar {
+            width: 5vw;
+            /* Set a specific width */
+            background-color: whitesmoke;
+            /* Dark-grey background */
+            border-radius: 0px 20px 20px 0px;
+        }
+
+        .icon-bar a {
+            display: block;
+            /* Make the links appear below each other instead of side-by-side */
+            text-align: center;
+            /* Center-align text */
+            padding: 16px;
+            /* Add some padding */
+            transition: all 0.3s ease;
+            /* Add transition for hover effects */
+            color: blue;
+            /* White text color */
+            font-size: 2.5vw;
+            /* Increased font-size */
+        }
+
+        .icon-bar a:hover {
+            background-color: whitesmoke;
+            /* Add a hover color */
+            width: 100px !important;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 0px 20px 20px 0px;
+        }
+
+        .active {
+            width: 6vw !important;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: white;
+            border-radius: 0px 20px 20px 0px;
+        }
+    </style>
+</head>
+
+<body style="background-color: whitesmoke;">
+    <div style="
+    width: 7vw;
+    position: absolute;
+    height: 100vh;
+    background-color: #003cff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+"><i class="bi bi-box" style="color: white;
+    font-size: 3vw;
+    padding: 0 2vw;"></i>
+        <div style="
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+">
+            <div class="icon-bar">
+                <a class="active" href="#"><i class="fa fa-home"></i></a>
+                <a href="#"><i class="fa fa-search"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+                <a href="#"><i class="fa fa-globe"></i></a>
+                <a href="#"><i class="fa fa-trash"></i></a>
+            </div>
+        </div>
+        <i class="bi bi-gear" style="color: white;
+    font-size: 3vw;
+    padding: 0 2vw;"></i>
+    </div>
+    <div style="position: static;width: 93vw;height: 5vh;margin-left: 7vw;text-align: center;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;font-weight: 700;color: blue;z-index: 1000;background-color: whitesmoke;align-items: center;
+    display: flex;
+    justify-content: center;">
+
+        <p style="display: inline-block;margin:0;font-size: 3vh;flex-grow: 1;"> Overview</p>
+        <i class="bi bi-question-circle-fill" style="font-size: 3vh;padding-right: 1vw;"></i> <img
+            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+            style="width: 4vh;float: right;margin-right: 1vw;" alt="Avatar" />
+    </div>
+    <nav aria-label="Page navigation example" style="margin-left: 8vw;margin-top: 1vh;display: inline-block;">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">20</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <input class="form-control" type="date" style="float: right;
+  margin: 1vh 1vw;
+  display: inline-block;
+  width: 20vw;" />
+    <div style="height: 28vh;display: flex;background-color: white;width: 91vw;border-radius: 5px;padding: 1%;
+    margin: 0vh 1vw 1vh 8vw; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div style="width: 15vw;display: flex;
+        flex-direction: column;">
+            <h4 class="color-blue" style="font-weight: 700;flex-grow: 1;font-size: 2vw;">ID:16745</h4>
+            <table class="color-blue">
+                <tr>
+                    <td>Time:</td>
+                    <td>32 mins</td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>male</td>
+                </tr>
+                <tr>
+                    <td>Height:</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td>32</td>
+                </tr>
+            </table>
+
+        </div>
+        <div
+            style="position: relative;width: 25vw;height: 25vh;background-color: #eff2ff;border-radius: 5px;margin: 0 10px;display: flex;justify-content: center;flex-direction: column;">
+            <canvas id="myChart" style="width: 100%;align-self: center;flex-grow: 1;padding: 10px;"></canvas>
+        </div>
+        <div
+            style="position: relative;width:25vw;height: 25vh;background-color: #eff2ff;margin: 0 2px;border-radius: 5px;display: flex;justify-content: center;">
+            <canvas id="myChart1" style="width: 100% !important;align-self: center;padding: 10px;"></canvas>
+        </div>
+        <div
+            style="position: relative;width: 25vw;height: 25vh; background-color: #eff2ff;border-radius: 5px;margin: 0 10px;display: flex;justify-content: center;">
+            <canvas id="myChart2" style="width: 100%;align-self: center;padding: 10px;"></canvas>
+        </div>
+    </div>
+    <div style="height: 28vh;display: flex;background-color: white;width: 91vw;border-radius: 5px;padding: 1%;
+    margin: 0vh 1vw 1vh 8vw; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div style="width: 15vw;display: flex;
+        flex-direction: column;">
+            <h4 class="color-blue" style="font-weight: 700;flex-grow: 1;font-size: 2vw;">ID:16745</h4>
+            <table class="color-blue">
+                <tr>
+                    <td>Time:</td>
+                    <td>32 mins</td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>male</td>
+                </tr>
+                <tr>
+                    <td>Height:</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td>32</td>
+                </tr>
+            </table>
+
+        </div>
+        <div
+            style="position: relative;width: 25vw;height: 25vh;background-color: #eff2ff;border-radius: 5px;margin: 0 10px;display: flex;justify-content: center;">
+            <canvas id="myChart10" style="width: 100%;align-self: center;padding: 10px;"></canvas>
+        </div>
+        <div
+            style="position: relative;width:25vw;height: 25vh;background-color: #eff2ff;margin: 0 2px;border-radius: 5px;display: flex;justify-content: center;">
+            <canvas id="myChart11" style="width: 100% !important;align-self: center;padding: 10px;"></canvas>
+        </div>
+        <div
+            style="position: relative;width: 25vw;height: 25vh; background-color: #eff2ff;border-radius: 5px;margin: 0 10px;display: flex;justify-content: center;">
+            <canvas id="myChart12" style="width: 100%;align-self: center;padding: 10px;"></canvas>
+        </div>
+    </div>
+    <div style="height: 28vh;display: flex;background-color: white;width: 91vw;border-radius: 5px;padding: 1%;
+    margin: 0vh 1vw 1vh 8vw; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div style="width: 15vw;display: flex;
+        flex-direction: column;">
+            <h4 class="color-blue" style="font-weight: 700;flex-grow: 1;font-size: 2vw;">ID:16745</h4>
+            <table class="color-blue">
+                <tr>
+                    <td>Time:</td>
+                    <td>32 mins</td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>male</td>
+                </tr>
+                <tr>
+                    <td>Height:</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td>32</td>
+                </tr>
+            </table>
+
+        </div>
+        <div
+            style="position: relative;width: 25vw;height: 25vh;background-color: #eff2ff;border-radius: 5px;margin: 0 10px;display: flex;justify-content: center;">
+            <canvas id="myChart20" style="width: 100%;align-self: center;padding: 10px;"></canvas>
+        </div>
+        <div
+            style="position: relative;width:25vw;height: 25vh;background-color: #eff2ff;margin: 0 2px;border-radius: 5px;display: flex;justify-content: center;">
+            <canvas id="myChart21" style="width: 100% !important;align-self: center;padding: 10px;"></canvas>
+        </div>
+        <div
+            style="position: relative;width: 25vw;height: 25vh; background-color: #eff2ff;border-radius: 5px;margin: 0 10px;display: flex;justify-content: center;">
+            <canvas id="myChart22" style="width: 100%;align-self: center;padding: 10px;"></canvas>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <script>
+        Chart.register(ChartDataLabels);
+        const ctx = document.getElementById('myChart');
+        const ctx1 = document.getElementById('myChart1');
+        const ctx2 = document.getElementById('myChart2');
+        const ctx10 = document.getElementById('myChart10');
+        const ctx11 = document.getElementById('myChart11');
+        const ctx12 = document.getElementById('myChart12');
+        const ctx20 = document.getElementById('myChart20');
+        const ctx21 = document.getElementById('myChart21');
+        const ctx22 = document.getElementById('myChart22');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow'],
+                datasets: [{
+                    label: ['Ingershot'],
+                    data: [12, 19, 6],
+                    borderWidth: 1,
+                    backgroundColor: ["#00347b", "#003cff", "#000000"]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        display: false,
+                        beginAtZero: true,
+                        grid: {
+                            display: false
+                        },
+
+                    },
+                    x: {
+                        display: false,
+                    }
+
+                },
+                plugins: {
+                    title: {
+                        text: "Items of Interest",
+                        display: true,
+                        color: "#0034ff",
+                        font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 20);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        weight: "bold",
+                        align: "start",
+                        position: "top"
+                    },
+                    legend: {
+                        title: {
+                            text: "Products", display: true, color: "#00347b", size: 28, weight: "bold", font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 24);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        },
+                        position: "left",
+                        labels: {
+                            paddingLeft: 10,
+                            usePointStyle: true,
+                            boxHeight: 10,
+                            boxWidth: 10,
+                            borderRadius: 10
+                        }
+                    },
+                    datalabels: {
+                        color: 'white',
+                        font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 16);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        anchor: 'end',
+                        align: 'start',
+                    }
+                },
+                layout: {
+                    autoPadding: true
+                },
+
+                categoryPercentage: 0.98,
+                barPercentage: 1.0
+            }
+        });
+        new Chart(ctx1, {
+            type: 'doughnut',
+            data: {
+                labels: ['Zone 1', 'Zone 2', 'Zone 3', 'Zone 4'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5],
+                    borderWidth: 1,
+                    backgroundColor: ["#00347b", "#003cff", "#000000", "#9ab2ff"],
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        display: false,
+                        beginAtZero: true,
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        text: "POI",
+                        display: true,
+                        color: "#0034ff",
+                        font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 20);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        weight: "bold",
+                        align: "start",
+                        position: "top"
+                    },
+                    legend: {
+                        title: {
+                            text: "Zones",
+                            display: true,
+                            color: "#00347b",
+                            font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 24);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        },
+                        position: "right",
+                        labels: {
+                            usePointStyle: true,
+                            padding: 10,
+                            boxHeight: 10,
+                            boxWidth: 10,
+                            borderRadius: 10
+                        }
+                    },
+                    layout: {
+                        autoPadding: true
+                    },
+                    datalabels: { // This code is used to display data values
+                        anchor: 'end',
+                        align: 'end',
+                        color: "#0034ff",
+                        formatter: function (value) {
+                            return `${value}%`
+                        },
+                        font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 16);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                    }
+                }
+            }
+        });
+        new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+                labels: ['Ingershot', 'Karotteshot', 'Dinkel Riegel'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 6],
+                    borderWidth: 1,
+                    backgroundColor: ["#00347b", "#003cff", "#000000"]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: "70%",
+                scales: {
+                    y: {
+                        display: false,
+                        beginAtZero: true,
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        text: "Sales",
+                        display: true,
+                        color: "#0034ff",
+                        font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 20);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        weight: "bold",
+                        align: "start",
+                        position: "top"
+                    },
+                    legend: {
+                        title: {
+                            text: "Products", display: true, color: "#00347b", font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 24);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        },
+                        position: "right",
+
+                        labels: {
+                            usePointStyle: true,
+                            boxHeight: 10,
+                            boxWidth: 10,
+                            borderRadius: 10
+                        }
+
+                    },
+                },
+                layout: {
+                    autoPadding: true
+                }
+            },
+            plugins: [{
+                id: 'text',
+                beforeDraw: function (chart, a, b) {
+                    var width = chart.width,
+                        height = chart.height,
+                        ctx = chart.ctx;
+
+                    ctx.restore();
+                    var fontSize = (height / 240).toFixed(2);
+                    ctx.font = fontSize + "em sans-serif";
+                    ctx.textBaseline = "middle";
+
+                    var text = "Total\n$322",
+                        textX = Math.round(((width - ctx.measureText(text).width) / 2) - (width / 8)),
+                        textY = height / 1.70;
+
+                    ctx.fillText(text, textX, textY);
+                    ctx.save();
+                }
+            }]
+
+        });
+        new Chart(ctx10, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow'],
+                datasets: [{
+                    label: ['Ingershot'],
+                    data: [12, 19, 6],
+                    borderWidth: 1,
+                    backgroundColor: ["#00347b", "#003cff", "#000000"]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        display: false,
+                        beginAtZero: true,
+                        grid: {
+                            display: false
+                        },
+
+                    },
+                    x: {
+                        display: false,
+                    }
+
+                },
+                plugins: {
+                    title: {
+                        text: "Items of Interest",
+                        display: true,
+                        color: "#0034ff",
+                        font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 20);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        weight: "bold",
+                        align: "start",
+                        position: "top"
+                    },
+                    legend: {
+                        title: {
+                            text: "Products", display: true, color: "#00347b", size: 28, weight: "bold", font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 24);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        },
+                        position: "left",
+                        labels: {
+                            usePointStyle: true,
+                            boxHeight: 10,
+                            boxWidth: 10,
+                            borderRadius: 10
+                        }
+                    },
+                    datalabels: {
+                        color: 'white',
+                        font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 16);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        anchor: 'end',
+                        align: 'start',
+                    }
+                },
+                layout: {
+                    autoPadding: true
+                },
+
+                categoryPercentage: 0.98,
+                barPercentage: 1.0
+            }
+        });
+        new Chart(ctx11, {
+            type: 'doughnut',
+            data: {
+                labels: ['Zone 1', 'Zone 2', 'Zone 3', 'Zone 4'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5],
+                    borderWidth: 1,
+                    backgroundColor: ["#00347b", "#003cff", "#000000", "#9ab2ff"],
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        display: false,
+                        beginAtZero: true,
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        text: "POI",
+                        display: true,
+                        color: "#0034ff",
+                        font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 20);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        weight: "bold",
+                        align: "start",
+                        position: "top"
+                    },
+                    legend: {
+                        title: {
+                            text: "Zones",
+                            display: true,
+                            color: "#00347b",
+                            font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 24);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        },
+                        position: "right",
+                        labels: {
+                            usePointStyle: true,
+                            padding: 10,
+                            boxHeight: 10,
+                            boxWidth: 10,
+                            borderRadius: 10
+                        }
+                    },
+                    layout: {
+                        autoPadding: true
+                    },
+                    datalabels: { // This code is used to display data values
+                        anchor: 'end',
+                        align: 'end',
+                        color: "#0034ff",
+                        formatter: function (value) {
+                            return `${value}%`
+                        },
+                        font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 16);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                    }
+                }
+            }
+        });
+        new Chart(ctx12, {
+            type: 'doughnut',
+            data: {
+                labels: ['Ingershot', 'Karotteshot', 'Dinkel Riegel'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 6],
+                    borderWidth: 1,
+                    backgroundColor: ["#00347b", "#003cff", "#000000"]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: "70%",
+                scales: {
+                    y: {
+                        display: false,
+                        beginAtZero: true,
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        text: "Sales",
+                        display: true,
+                        color: "#0034ff",
+                        font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 20);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        weight: "bold",
+                        align: "start",
+                        position: "top"
+                    },
+                    legend: {
+                        title: {
+                            text: "Products",
+                            display: true,
+                            color: "#00347b",
+                            font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 24);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        },
+                        position: "right",
+
+                        labels: {
+                            usePointStyle: true,
+                            boxHeight: 10,
+                            boxWidth: 10,
+                            borderRadius: 10
+                        }
+
+                    }
+                },
+                layout: {
+                    autoPadding: true
+                }
+            },
+            plugins: [{
+                id: 'text',
+                beforeDraw: function (chart, a, b) {
+                    var width = chart.width,
+                        height = chart.height,
+                        ctx = chart.ctx;
+
+                    ctx.restore();
+                    var fontSize = (height / 240).toFixed(2);
+                    ctx.font = fontSize + "em sans-serif";
+                    ctx.textBaseline = "middle";
+
+                    var text = "Total\n$322",
+                        textX = Math.round(((width - ctx.measureText(text).width) / 2) - (width / 8)),
+                        textY = height / 1.70;
+
+                    ctx.fillText(text, textX, textY);
+                    ctx.save();
+                }
+            }]
+
+        });
+        new Chart(ctx20, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow'],
+                datasets: [{
+                    label: ['Ingershot'],
+                    data: [12, 19, 6],
+                    borderWidth: 1,
+                    backgroundColor: ["#00347b", "#003cff", "#000000"]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        display: false,
+                        beginAtZero: true,
+                        grid: {
+                            display: false
+                        },
+
+                    },
+                    x: {
+                        display: false,
+                    }
+
+                },
+                plugins: {
+                    title: {
+                        text: "Items of Interest",
+                        display: true,
+                        color: "#0034ff",
+                        font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 20);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        weight: "bold",
+                        align: "start",
+                        position: "top"
+                    },
+                    legend: {
+                        title: {
+                            text: "Products", display: true, color: "#00347b", size: 28, weight: "bold", font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 24);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        },
+                        position: "left",
+                        labels: {
+                            usePointStyle: true,
+                            boxHeight: 10,
+                            boxWidth: 10,
+                            borderRadius: 10
+                        }
+                    },
+                    datalabels: {
+                        color: 'white',
+                        font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 16);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        anchor: 'end',
+                        align: 'start',
+                    }
+                },
+                layout: {
+                    autoPadding: true
+                },
+
+                categoryPercentage: 0.98,
+                barPercentage: 1.0
+            }
+        });
+        new Chart(ctx21, {
+            type: 'doughnut',
+            data: {
+                labels: ['Zone 1', 'Zone 2', 'Zone 3', 'Zone 4'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5],
+                    borderWidth: 1,
+                    backgroundColor: ["#00347b", "#003cff", "#000000", "#9ab2ff"],
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        display: false,
+                        beginAtZero: true,
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 24);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                    title: {
+                        text: "POI",
+                        display: true,
+                        color: "#0034ff",
+                        font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 20);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        weight: "bold",
+                        align: "start",
+                        position: "top"
+                    },
+                    legend: {
+                        title: {
+                            text: "Zones",
+                            display: true,
+                            color: "#00347b",
+                            font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 24);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        },
+                        position: "right",
+                        labels: {
+                            usePointStyle: true,
+                            padding: 10,
+                            boxHeight: 10,
+                            boxWidth: 10,
+                            borderRadius: 10
+                        }
+                    },
+                    layout: {
+                        autoPadding: true
+                    },
+                    datalabels: { // This code is used to display data values
+                        anchor: 'end',
+                        align: 'end',
+                        color: "#0034ff",
+                        formatter: function (value) {
+                            return `${value}%`
+                        },
+                        font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 16);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                    }
+                }
+            }
+        });
+        new Chart(ctx22, {
+            type: 'doughnut',
+            data: {
+                labels: ['Ingershot', 'Karotteshot', 'Dinkel Riegel'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3],
+                    borderWidth: 1,
+                    backgroundColor: ["#00347b", "#003cff", "#000000"]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: "70%",
+                scales: {
+                    y: {
+                        display: false,
+                        beginAtZero: true,
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        text: "Sales",
+                        display: true,
+                        color: "#0034ff",
+                        font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 20);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        weight: "bold",
+                        align: "start",
+                        position: "top"
+                    },
+                    legend: {
+                        title: {
+                            text: "Products", display: true, color: "#00347b", font: function (context) {
+                            var width = context.chart.width;
+                            var size = Math.round(width / 24);
+
+                            return {
+                                weight: 'bold',
+                                size: size
+                            };
+                        },
+                        },
+                        position: "right",
+
+                        labels: {
+                            usePointStyle: true,
+                            boxHeight: 10,
+                            boxWidth: 10,
+                            borderRadius: 10,
+                        }
+
+                    }
+                },
+                layout: {
+                    autoPadding: true
+                }
+            },
+            plugins: [{
+                id: 'text',
+                beforeDraw: function (chart, a, b) {
+                    var width = chart.width,
+                        height = chart.height,
+                        ctx = chart.ctx;
+
+                    ctx.restore();
+                    var fontSize = (height / 240).toFixed(2);
+                    ctx.font = fontSize + "em sans-serif";
+                    ctx.textBaseline = "middle";
+
+                    var text = "Total\n$322",
+                        textX = Math.round(((width - ctx.measureText(text).width) / 2) - (width / 8)),
+                        textY = height / 1.70;
+
+                    ctx.fillText(text, textX, textY);
+                    ctx.save();
+                }
+            }]
+
+        });
+
+        addEventListener("resize", (event) => {
+            console.log(event);
+        });
+    </script>
+</body>
+
+</html>
